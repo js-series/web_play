@@ -221,7 +221,7 @@ document.querySelector("#myForm").addEventListener("submit", function (event) {
 
 Using your knowledge of apis, events and objects try the following in JS Bin or Codepen.
 
-* Add a form to your site with an id of `searTitle` for the  input field
+* Add a form to your site with an id of `searchTitle` for the  input field
 
   ```html
   <input id="searchTitle" type="text">
