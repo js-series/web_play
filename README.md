@@ -116,14 +116,14 @@ For each exercise record the response's movie Title and Description.
 Fetch is the new experimental standard for easily making requests.
 
 ```
-fetch("https://www.omdbapi.com/t=the+matrix")
+fetch("https://www.omdbapi.com/?t=the+matrix")
 ```
 
 Try the above and check the nextwork tab.
 
 
 ```javascript
-fetch("https://www.omdbapi.com/t=the+matrix")
+fetch("https://www.omdbapi.com/?t=the+matrix")
   .then(function (response) {
     // tell it to read the JSON.
     return response.json();
@@ -138,7 +138,7 @@ Alternatively you could also condense this a bit.
 
 
 ```javascript
-fetch("https://www.omdbapi.com/t=the+matrix")
+fetch("https://www.omdbapi.com/?t=the+matrix")
   .then(function (response) {
     // read the JSON
     response.json().then(function (data) {
@@ -152,7 +152,7 @@ fetch("https://www.omdbapi.com/t=the+matrix")
 You might run into a CORS issue. To get around this you specify a mode of "cors".
 
 ```javascript
-fetch("https://www.omdbapi.com/t=the+matrix", { mode: "cors" })
+fetch("https://www.omdbapi.com/?t=the+matrix", { mode: "cors" })
 ```
 
 * Console log your search data for a Star Wars movie.
@@ -182,7 +182,7 @@ Just find a CDN link for jQuery's source. Then just add the following:
 
 
 ```javascript
-$.get("https://www.omdbapi.com/t=the+matrix").done(function (data) {
+$.get("https://www.omdbapi.com/?t=the+matrix").done(function (data) {
   console.log(data);
 });
 ```
